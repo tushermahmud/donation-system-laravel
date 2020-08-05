@@ -1,9 +1,9 @@
 <?php
 $DATABASE_URL=parse_url(getenv('DATABASE_URL'));
-$host=$DATABASE_URL["host"];
-$username=$DATABASE_URL["user"];
-$password=$DATABASE_URL["pass"];
-$database=substr($DATABASE_URL["path"],1);
+$host=$DATABASE_URL["host"]??null;
+$username=$DATABASE_URL["user"]??null;
+$password=$DATABASE_URL["pass"]??null;
+$database=substr($DATABASE_URL["path"],1)??null;
 return [
 
     /*
