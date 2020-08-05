@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Providers;
+
+use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Validator;
@@ -12,8 +14,12 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(UrlGenerator $url)
     {
+        if(env('REDIRECT_HTTPS'))
+        {
+            $url->forceSchema('https');
+        }
         Schema::defaultStringLength(191);
 
     Validator::extend('greater_than_field', function($attribute, $value, $parameters, $validator) {
