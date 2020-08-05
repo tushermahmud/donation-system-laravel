@@ -23,8 +23,6 @@ class AddOrdersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
-       DB::statement("ALTER TABLE orders AUTO_INCREMENT = 700001;");
-       
     }
 
     /**

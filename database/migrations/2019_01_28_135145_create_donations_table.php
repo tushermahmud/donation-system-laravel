@@ -17,7 +17,6 @@ class CreateDonationsTable extends Migration
             $table->increments('id');
             $table->integer('entrepreneur_id')->unsigned();
             $table->foreign('entrepreneur_id')->references('id')->on('users')->onDelete('restrict');
-            
             $table->string('title');
             $table->string('slug');
             $table->text('body');
