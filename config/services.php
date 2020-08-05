@@ -35,9 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
     'google' => [
-    'client_id' => '503453428676-t0el949bn9cco979rtmreuejhui2c80o.apps.googleusercontent.com',         
+    'client_id' => '239768237727-orcn6nko6ergmr57guac6u4car4pecui.apps.googleusercontent.com',
     // Your gmail Client ID
-    'client_secret' => 'QWICLNG4iChVRNT3O3Jvjv0F', // Your google Client Secret
+    'client_secret' => 'UkPhAtDOpL-vMafIGciwQyBD', // Your google Client Secret
     'redirect' => 'http://127.0.0.1:8000/callback',
 ],
 
