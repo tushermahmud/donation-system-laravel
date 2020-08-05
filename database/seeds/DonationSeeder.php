@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Faker\Factory;
+use Illuminate\Database\Eloquent\Factory;
 
 class DonationSeeder extends Seeder
 {
@@ -17,7 +17,7 @@ class DonationSeeder extends Seeder
         //inserting data
         $donations=[];
 
-        $faker=Faker\factory::create();
+        $faker=factory::create();
         for($i=0;$i<10;$i++){
         	$image='cause'.'-'.rand(1,6).'.jpg';
         	$date=date('Y-m-d H:m:s',strtotime("2018-12-17 06:00:00 + {$i} days"));

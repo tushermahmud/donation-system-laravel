@@ -15,7 +15,7 @@ class AddEntrepreneurIdColumn extends Migration
     {
         Schema::table('orders', function (Blueprint $table) {
             $table->integer('entrepreneur_id')->unsigned()->nullable();
-            $table->foreign('entrepreneur_id')->references('id')->on('users')->onDelete('restrict');
+            $table->foreign('entrepreneur_id')->references('id')->on('users')->onDelete('cascade');
             
         });
     }

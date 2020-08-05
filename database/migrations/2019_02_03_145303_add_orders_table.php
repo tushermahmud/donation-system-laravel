@@ -16,7 +16,7 @@ class AddOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('order_id')->unsigned();
             $table->integer('donation_id')->unsigned();
-            $table->foreign('donation_id')->references('id')->on('donations')->onDelete('restrict');
+            $table->foreign('donation_id')->references('id')->on('donations')->onDelete('cascade');
             $table->string('order_status')->nullable();
             $table->integer('grand_total');
             $table->string('currency',3);
