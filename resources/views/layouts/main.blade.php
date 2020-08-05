@@ -13,17 +13,17 @@
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- ElegantFonts CSS -->
-    <link rel="stylesheet" href="{{asset('css/elegant-fonts.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/elegant-fonts.css')}}">
 
     <!-- themify-icons CSS -->
-    <link rel="stylesheet" href="{{asset('css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/themify-icons.css')}}">
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="{{asset('css/swiper.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/swiper.min.css')}}">
   
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('style.css')}}">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{secure_asset('style.css')}}">
     <style>
         .page-item.active .page-link{
             background-color:#ff5a00 !important;
@@ -229,13 +229,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>    <script type='text/javascript' src="{{asset('js/jquery.collapsible.min.js')}}"></script>
-    <script type='text/javascript' src="{{asset('js/swiper.min.js')}}"></script>
-    <script type='text/javascript' src="{{asset('js/jquery.countdown.min.js')}}"></script>
-    <script type='text/javascript' src="{{asset('js/circle-progress.min.js')}}"></script>
-    <script type='text/javascript' src="{{asset('js/jquery.countTo.min.js')}}"></script>
-    <script type='text/javascript' src="{{asset('js/jquery.barfiller.js')}}"></script>
-    <script type='text/javascript' src="{{asset('js/custom.js')}}"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script type='text/javascript' src="{{secure_asset('js/swiper.min.js')}}"></script>
+    <script type='text/javascript' src="{{secure_asset('js/jquery.countdown.min.js')}}"></script>
+    <script type='text/javascript' src="{{secure_asset('js/circle-progress.min.js')}}"></script>
+    <script type='text/javascript' src="{{secure_asset('js/jquery.countTo.min.js')}}"></script>
+    <script type='text/javascript' src="{{secure_asset('js/jquery.barfiller.js')}}"></script>
+    <script type='text/javascript' src="{{secure_asset('js/custom.js')}}"></script>
+    <script src="{{ secure_asset('js/app.js') }}"></script>
 
 </body>
 </html>
